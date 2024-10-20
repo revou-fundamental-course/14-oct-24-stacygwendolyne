@@ -1,1 +1,54 @@
-/* ini CSS */
+html {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    border: 1px solid none;
+    height: 50px;
+    width: 50px;
+    background-image: url(../asset/nb-logo.png);
+    background-size:  cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.photo-banner {
+    border: 1px solid;
+    height: 250px;
+    background-image: url(../asset/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    border: 1px solid;
+    padding: 6px;
+    text-decoration: none;
+    color: black
+}
+
+.article {
+    height: 300px;
+}
+
+.message-box {
+    display: flex;
+}
+
+footer>div {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bold;
+}
