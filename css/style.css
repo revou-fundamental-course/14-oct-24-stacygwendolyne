@@ -1,6 +1,11 @@
 html {
     scroll-behavior: smooth;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(27, 40, 161);
+}
+
+body  {
+    color: white;
 }
 
 .main-header {
@@ -10,40 +15,82 @@ html {
 }
 
 .logo-icon {
-    border: 1px solid none;
+    border: none;
     height: 50px;
     width: 50px;
-    background-image: url(../asset/nb-logo.png);
+    background-image: url(../asset/nb.png);
     background-size:  cover;
     background-position: center;
     border-radius: 50%;
 }
 
 .photo-banner {
-    border: 1px solid;
-    height: 250px;
-    background-image: url(../asset/banner.png);
+    border: 1px;
+    height: 400px;
     background-size: cover;
     background-position: center;
+    
+}
+
+.photo-1 {
+    background-image: url(../asset/1.jpg);
+    display: block;
+}
+
+.photo-2 {
+    background-image: url(../asset/2.jpg);
+    display: none;
+}
+
+.photo-3 {
+    background-image: url(../asset/3.jpg);
+    display: none;
+}
+
+img {
+    height: 150px;
+}
+
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
     display: flex;
+    gap: 5px;
 }
 
 nav>a {
     border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
     padding: 6px;
     text-decoration: none;
-    color: black
+    color: rgb(34, 219, 10)
 }
+
 
 .article {
     height: 300px;
 }
 
-.message-box {
+.sigma-capek {
     display: flex;
+    justify-content: space-between;
+}
+
+.message-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#result {
+    margin: 0px;
+}
+
+.senderUI {
+    place-content: left;
 }
 
 footer>div {
@@ -51,4 +98,10 @@ footer>div {
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+    }
 }

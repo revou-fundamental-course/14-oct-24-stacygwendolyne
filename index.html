@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css\style.css">
+    
 </head>
 
 <body>
@@ -22,6 +23,8 @@
         </nav>
     </header>
 
+    
+
     <hr />
 
     <!-- Konten -->
@@ -29,15 +32,20 @@
         <!-- Home -->
         <section id="section-home">
             <header>
-                <h1>Hi User, Welcome to My Website!</h1>
+                <h1>Hi <span id="name">User</span>, Welcome to My Website!</h1>
             </header>
 
             <article>
-                <p>Hey There, I'm using WhatsApp</p>
+                <p>Thank You for Visiting!</p>
 
                 <!-- Photo Banner -->
-                <div class="photo-banner"></div>
+                <div class="photo-banner photo-1"></div>
+                <div class="photo-banner photo-2"></div>
+                <div class="photo-banner photo-3"></div>
             </article>
+
+            <!-- <button type="button" onclick="nextSlide(1)">Slide</button> -->
+
         </section>
 
         <hr />
@@ -50,8 +58,10 @@
 
             <article>
                 <div class="article">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer purus urna, scelerisque nec euismod non, gravida ac ex. Fusce scelerisque orci urna. Donec id malesuada diam. Duis condimentum felis sit amet dolor aliquam, fermentum finibus justo venenatis.
-                </div>
+                    <div class="sigma-capek"> <img src="asset/kucing-sigma.jpg">
+                    Hi, I'm Charles Leclerc, a racing driver from Monaco. I’ve been passionate about motorsport since I was a kid, and I started karting at a young age. I made my Formula 1 debut with Sauber in 2018 and joined Ferrari in 2019, which has been a dream come true for me. 
+                    </div>
+            </div>
             </article>
         </section>
 
@@ -78,10 +88,32 @@
                 <h1>Message Us</h1>
             </header>
 
-            <div class="message-box">
-                <form></form>
+            <div class="message-container">
+                <form>
+                    <div>
+                        <label for="input-username">Username:</label>
+                        <input id="input-username" type="text" />
+                        <br />
 
-                <div></div>
+                        Jenis Kelamin:
+                        <input type="radio" id="Male" name="gender" value="Laki-laki" />
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="" />
+                        <label for="female">Perempuan</label>
+                        <br />
+
+                        Pesan:
+                        <textarea placeholder="Pesan" name="message"></textarea>
+                        <br />
+
+                    </div>
+
+                    <button type="button" onclick="validateForm()">Submit</button>
+                </form>
+
+                <div>
+                    <p >Result: <span id="result"></span></p>
+                </div>
             </div>
         </section>
     </main>
@@ -90,8 +122,9 @@
 
     <!-- Copyright -->
      <footer>
-        <div>Made By @sscrltwitch</div>
+        <div>Made By Ketua Sigma Capek</div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
